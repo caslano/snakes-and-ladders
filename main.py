@@ -1,5 +1,5 @@
 import numpy as np
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 ladders = []
 snakes = []
@@ -45,6 +45,7 @@ proba = 0
 while cumulative_prob < 0.999999999:
     n += 1
     v = v.dot(T)
+    print(v)
     proba = v[100]
     P.append(proba)
     cumulative_prob += proba
